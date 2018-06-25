@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19849" started-at="2018-06-25T12:18:29Z" finished-at="2018-06-25T12:18:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19849" started-at="2018-06-25T12:18:29Z" finished-at="2018-06-25T12:18:49Z">
+      <class name="com.QAIT.Hris_maven.Hris_maven.hris_main">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="launchBrowser" is-config="true" duration-ms="8816" started-at="2018-06-25T12:18:29Z" finished-at="2018-06-25T12:18:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="attempt_Login_With_Incorrect_Password_Should_Render_Error_Message()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="attempt_Login_With_Incorrect_Password_Should_Render_Error_Message" duration-ms="11" started-at="2018-06-25T12:18:38Z" finished-at="2018-06-25T12:18:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.getUserNameEntry(hris_methods.java:11)
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.login(hris_methods.java:20)
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.loginWithIncorrectCredentials(hris_methods.java:27)
+at com.QAIT.Hris_maven.Hris_maven.hris_main.attempt_Login_With_Incorrect_Password_Should_Render_Error_Message(hris_main.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempt_Login_With_Incorrect_Password_Should_Render_Error_Message -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="closeBrowser" is-config="true" duration-ms="652" started-at="2018-06-25T12:18:38Z" finished-at="2018-06-25T12:18:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="launchBrowser" is-config="true" duration-ms="4617" started-at="2018-06-25T12:18:39Z" finished-at="2018-06-25T12:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="attempt_Login_With_No_Password_Should_Annotate_Blank_Password_Field()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="attempt_Login_With_No_Password_Should_Annotate_Blank_Password_Field" duration-ms="1" started-at="2018-06-25T12:18:43Z" finished-at="2018-06-25T12:18:43Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.getUserNameEntry(hris_methods.java:11)
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.login(hris_methods.java:20)
+at com.QAIT.Hris_maven.Hris_maven.hris_main.attempt_Login_With_No_Password_Should_Annotate_Blank_Password_Field(hris_main.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempt_Login_With_No_Password_Should_Annotate_Blank_Password_Field -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="closeBrowser" is-config="true" duration-ms="636" started-at="2018-06-25T12:18:43Z" finished-at="2018-06-25T12:18:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="launchBrowser" is-config="true" duration-ms="4454" started-at="2018-06-25T12:18:44Z" finished-at="2018-06-25T12:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="attempt_Login_With_correct_Password_Should_Take_U_To_Timesheet_Page()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="attempt_Login_With_correct_Password_Should_Take_U_To_Timesheet_Page" duration-ms="1" started-at="2018-06-25T12:18:48Z" finished-at="2018-06-25T12:18:48Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.getUserNameEntry(hris_methods.java:11)
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.login(hris_methods.java:20)
+at com.QAIT.Hris_maven.Hris_maven.hris_methods.loginWithCorrectCredentials(hris_methods.java:31)
+at com.QAIT.Hris_maven.Hris_maven.hris_main.attempt_Login_With_correct_Password_Should_Take_U_To_Timesheet_Page(hris_main.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempt_Login_With_correct_Password_Should_Take_U_To_Timesheet_Page -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.QAIT.Hris_maven.Hris_maven.hris_main@47c62251]" name="closeBrowser" is-config="true" duration-ms="621" started-at="2018-06-25T12:18:48Z" finished-at="2018-06-25T12:18:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.QAIT.Hris_maven.Hris_maven.hris_main -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
