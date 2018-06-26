@@ -5,16 +5,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class hris_methods {
-	WebDriver web;
 	
-	private WebElement getUserNameEntry(){
-		return web.findElement(By.id("txtUserName"));	
+	WebDriver web;
+	WebElement UserNameEntry, PasswordEntry, ErrorMessage;
+	
+	public hris_methods(WebDriver web){
+		this.web = web;
 	}
-	private WebElement getPasswordEntry(){
-		return web.findElement(By.id("txtPassword"));	
+	
+	public WebElement getUserNameEntry(){
+		return this.web.findElement(By.id("txtUserName"));	
 	}
-	private WebElement getErrorMessage(){
-		return web.findElement(By.cssSelector(".alert-error"));	
+	public WebElement getPasswordEntry(){
+		return this.web.findElement(By.id("txtPassword"));	
+	}
+	public WebElement getErrorMessage(){
+		return this.web.findElement(By.cssSelector(".alert-error"));	
 	}
 	void login(String username, String password){
         getUserNameEntry().clear();
@@ -29,7 +35,7 @@ public class hris_methods {
     }
 	public Timesheet loginWithCorrectCredentials(String username, String password){
         login(username, password);
-	    return new Timesheet();
+	    return new Timesheet(web);
 	}
 	public Boolean isErrorMessage(String expectedMessage){
         return getErrorMessage().getText()

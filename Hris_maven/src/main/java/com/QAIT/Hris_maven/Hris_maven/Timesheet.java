@@ -5,7 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class Timesheet {
 	WebDriver web;
+	
+	public Timesheet(WebDriver web) {
+		this.web = web;
+	}
+
 	public Boolean getDisplay(){
-		return web.findElement(By.className("ng-binding")).isDisplayed();
+		return this.web.findElement(By.className("ng-binding")).isDisplayed();
 	}
 }
